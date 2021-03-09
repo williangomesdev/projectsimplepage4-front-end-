@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+div.mainBox {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 30px;
+}
+
+div.mainBox {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+div.flexCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  padding: 20px 2%;
+}
+
+header div.logo {
+  width: 236px;
+  height: 40px;
+  background-image: url(../imagens/logo.png);
+  background-position: center;
+  background-size: cover;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+header nav ul li {
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #b4b4b4;
+  font-size: 0.5rem;
+}
+
+section.mosaic {
+  padding: 0 2%;
+}
+
+.mosaicWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.mosaicSingle {
+  width: calc(100% / 6);
+}
+
+.imgMosaicSingle {
+  width: 100%;
+  padding-top: 100%;
+  border: 5px solid black;
+}
+
+section.services > .mainBox {
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -30px;
+  text-align: center;
+}
+
+section.services > .mainBox .servicesBox {
+  background-image: url(../imagens/icone_dente.png);
+  background-size: 18px 18px;
+  background-position: center calc(100% - 0.1rem);
+  background-repeat: no-repeat;
+}
+
+section.services > .mainBox .servicesBox h2 {
+  color: white;
+  font-weight: normal;
+  font-size: 0.6rem;
+}
+
+section.services > .mainBox .servicesBox p {
+  color: white;
+  margin-top: 8px;
+  font-weight: normal;
+  font-size: 0.4rem;
+}
+
+section.services > .mainBox .servicesBox:nth-of-type(1),
+section.services > .mainBox .servicesBox:nth-of-type(3) {
+  width: 30%;
+  padding: 30px 2%;
+  background-color: #576975;
+}
+
+section.services > .mainBox .servicesBox:nth-of-type(2) {
+  width: 40%;
+  padding: 60px 2%;
+  background-color: #688293;
+  background-image: none;
+}
+/*# sourceMappingURL=main.css.map */

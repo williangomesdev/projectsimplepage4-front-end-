@@ -1,0 +1,19 @@
+section.mosaic {
+    padding: 0 2%;
+}
+
+.mosaicWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.mosaicSingle {
+    width: calc(100% / 6);
+}
+
+.imgMosaicSingle {
+    width: 100%;
+    padding-top: 100%;
+    border: 5px solid black;
+}
