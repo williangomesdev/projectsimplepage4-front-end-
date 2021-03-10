@@ -1,11 +1,13 @@
 section.mosaic {
-    padding: 0 2%;
+    margin: 0 auto;
+    padding: 0 30px;
 }
 
 .mosaicWrapper {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .mosaicSingle {

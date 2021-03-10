@@ -10,6 +10,10 @@ header div.logo {
     background-size: cover;
 }
 
+header nav.mobileMenu {
+    display: none;
+}
+
 header nav ul {
     list-style-type: none;
     display: flex;
