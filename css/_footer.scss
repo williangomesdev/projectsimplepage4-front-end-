@@ -1,0 +1,21 @@
+footer {
+    background-color: #688293;
+    text-align: center;
+    color: white;
+}
+
+footer div.footerBlock {
+    width: calc(100% /3);
+    height: 100%;
+}
+
+footer div.footerBlock h2 {
+    font-size: 0.9rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+footer div.footerBlock p {
+    margin-top: 8px;
+    font-size: 0.6rem;
+}

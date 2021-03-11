@@ -1,61 +1,106 @@
-    @media screen and (max-width: 768px) {
-        div.flexCenter {
-            flex-direction: column;
-            align-items: center;
-        }
-        header nav.desktopMenu {
-            display: none;
-        }
-        header nav.mobileMenu {
-            display: unset;
-        }
-        section.services>.mainBox .servicesBox:nth-of-type(1),
-        section.services>.mainBox .servicesBox:nth-of-type(3) {
-            width: 90%;
-            max-width: 350px;
-            padding: 30px 2%;
-            background-color: #576975;
-        }
-        section.services>.mainBox .servicesBox:nth-of-type(2) {
-            width: 90%;
-            max-width: 380px;
-            padding: 40px 2%;
-        }
-        section.containerProfile div.wrapperProfile {
-            padding: 0;
-        }
-        section.containerProfile div.wrapperProfile .paddingImg {
-            display: inline-block;
-            text-align: center;
-            position: static;
-        }
-        section.containerProfile div.wrapperProfile .profileImg {
-            width: 50%;
-            height: auto;
-            padding-top: 70%;
-            display: inline-block;
-        }
-        section.containerProfile div.profiletext {
-            width: 100%;
-            display: inline-block;
-            text-align: justify;
-            padding: 0 30px;
-        }
-        section.videos .boxVideo {
-            width: 100%;
-            padding-top: 40%;
-        }
-    }
-    
-    @media screen and (max-width: 580px) {
-        section.containerProfile div.wrapperProfile .profileImg {
-            width: 80%;
-            padding-top: 110%;
-        }
-    }
-    
-    @media screen and (max-width: 480px) {
-        header div.logo {
-            width: 200px;
-        }
-    }
+   @media screen and (max-width: 1024px) {
+       .mosaicSocial div.imgMosaicSingleSocial {
+           width: calc(100% / 6);
+           padding-top: calc(100% /6);
+           border: 3px solid black;
+       }
+       .mosaicSocial div:nth-of-type(1n + 7) {
+           display: none;
+       }
+   }
+   
+   @media screen and (max-width: 768px) {
+       div.flexCenter {
+           flex-direction: column;
+           align-items: center;
+       }
+       header nav.desktopMenu {
+           display: none;
+       }
+       header nav.mobileMenu {
+           display: unset;
+       }
+       section.services>.mainBox .servicesBox:nth-of-type(1),
+       section.services>.mainBox .servicesBox:nth-of-type(3) {
+           width: 90%;
+           max-width: 350px;
+           padding: 30px 2%;
+           background-color: #576975;
+       }
+       section.services>.mainBox .servicesBox:nth-of-type(2) {
+           width: 90%;
+           max-width: 380px;
+           padding: 40px 2%;
+       }
+       section.containerProfile div.wrapperProfile {
+           padding: 0;
+       }
+       section.containerProfile div.wrapperProfile .paddingImg {
+           display: inline-block;
+           text-align: center;
+           position: static;
+       }
+       section.containerProfile div.wrapperProfile .profileImg {
+           width: 50%;
+           height: auto;
+           padding-top: 70%;
+           display: inline-block;
+       }
+       section.containerProfile div.profiletext {
+           width: 100%;
+           display: inline-block;
+           text-align: justify;
+           padding: 0 30px;
+       }
+       section.videos .boxVideo {
+           width: 100%;
+           padding-top: 40%;
+       }
+       section.treatments .tratmentsContainer {
+           width: 100%;
+           text-align: justify;
+       }
+       section.treatments .tratmentsContainer h2 {
+           text-align: center;
+       }
+       footer div.footerBlock {
+           width: 100%;
+           padding: 10px 0;
+           text-align: center;
+       }
+   }
+   
+   @media screen and (max-width: 580px) {
+       section.containerProfile div.wrapperProfile .profileImg {
+           width: 80%;
+           padding-top: 110%;
+       }
+       .mosaicSocial {
+           align-items: center;
+           justify-content: space-around;
+       }
+       .mosaicSocial div.imgMosaicSingleSocial {
+           width: calc(100% / 3);
+           padding-top: calc(100% /3);
+           border: 3px solid black;
+       }
+       form div.formMailPhone {
+           display: unset;
+       }
+       form div.formMailPhone div.one,
+       form div.formMailPhone div.two {
+           padding: 0;
+       }
+       form div.formMailPhone div.one {
+           padding-bottom: 20px;
+       }
+       form div.formMailPhone div.two {
+           padding-top: 20px;
+       }
+   }
+   
+   @media screen and (max-width: 480px) {
+       header div.logo {
+           width: 200px;
+       }
+   }

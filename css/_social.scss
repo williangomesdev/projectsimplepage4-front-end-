@@ -1,0 +1,40 @@
+.instagramCall {
+    width: 100%;
+    padding: 40px 0;
+    background: #98a5ae;
+}
+
+.instagramCall img,
+.facebookCall img {
+    cursor: pointer;
+}
+
+.instagramCall p {
+    color: white;
+    font-size: 0.6rem;
+    padding: 10px 0;
+}
+
+.mosaicSocial {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mosaicSocial div.imgMosaicSingleSocial {
+    width: calc(100% / 9);
+    padding-top: calc(100% /9);
+    border: 3px solid black;
+}
+
+.facebookCall {
+    width: 100%;
+    padding: 40px 0;
+    background: #576975;
+}
+
+.facebookCall p {
+    color: white;
+    font-size: 0.6rem;
+    padding: 10px 0;
+}

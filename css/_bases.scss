@@ -11,8 +11,19 @@ body {
     font-size: 35px;
 }
 
-div.flexCenter {
+.flexCenter {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.flexCenterColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.paddingSections {
+    padding: 70px 20px;
 }
