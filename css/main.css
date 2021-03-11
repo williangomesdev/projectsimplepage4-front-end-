@@ -5,22 +5,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-div.mainBox {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 html,
 body {
   height: 100%;
-  font-size: 30px;
-}
-
-div.mainBox {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
+  font-size: 35px;
 }
 
 div.flexCenter {
@@ -33,16 +21,24 @@ header {
   padding: 20px 2%;
 }
 
+div.mainBox {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+div.mainBoxMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 header div.logo {
   width: 236px;
   height: 40px;
   background-image: url(../imagens/logo.png);
   background-position: center;
   background-size: cover;
-}
-
-header nav.mobileMenu {
-  display: none;
 }
 
 header nav ul {
@@ -59,6 +55,31 @@ header nav ul li a {
   text-decoration: none;
   color: #b4b4b4;
   font-size: 0.5rem;
+}
+
+header nav.mobileMenu {
+  display: none;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  background-image: url(../imagens/menu-mobile.png);
+  background-size: 100% 100%;
+}
+
+header nav.mobileMenu ul {
+  position: absolute;
+  left: 0;
+  top: 75px;
+  background-color: white;
+  text-align: center;
+  display: none;
+  width: 100%;
+  z-index: 10;
+}
+
+header nav.mobileMenu ul li {
+  padding: 20px 0;
+  text-transform: uppercase;
 }
 
 section.mosaic {
@@ -173,10 +194,66 @@ section.containerProfile div.mainBox div.wrapperProfile div.paddingImg .profilet
   margin-top: 8px;
 }
 
+section.videos {
+  padding: 50px 20px;
+}
+
+section.videos .boxVideo {
+  width: 33.3%;
+  padding-top: calc(33.3% * 0.6);
+  border: 3px solid white;
+  position: relative;
+  background-color: gray;
+}
+
+section.videos .boxVideo iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section.treatments > h2 {
+  color: #698293;
+  font-size: 0.9rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section.treatments .paddingTreatments {
+  padding: 70px 20px;
+}
+
+section.treatments .tratmentsContainer {
+  width: 33.3%;
+}
+
+section.treatments .tratmentsContainer .tratmentsSingle {
+  padding: 20px;
+}
+
+section.treatments .tratmentsContainer .tratmentsSingle h2 {
+  color: #737373;
+  font-size: 0.8rem;
+}
+
+section.treatments .tratmentsContainer .tratmentsSingle p {
+  color: #b4b4b4;
+  font-size: 0.6rem;
+  padding: 10px 0;
+}
+
 @media screen and (max-width: 768px) {
   div.flexCenter {
     flex-direction: column;
     align-items: center;
+  }
+  header nav.desktopMenu {
+    display: none;
+  }
+  header nav.mobileMenu {
+    display: unset;
   }
   section.services > .mainBox .servicesBox:nth-of-type(1),
   section.services > .mainBox .servicesBox:nth-of-type(3) {
@@ -196,6 +273,7 @@ section.containerProfile div.mainBox div.wrapperProfile div.paddingImg .profilet
   section.containerProfile div.wrapperProfile .paddingImg {
     display: inline-block;
     text-align: center;
+    position: static;
   }
   section.containerProfile div.wrapperProfile .profileImg {
     width: 50%;
@@ -208,6 +286,10 @@ section.containerProfile div.mainBox div.wrapperProfile div.paddingImg .profilet
     display: inline-block;
     text-align: justify;
     padding: 0 30px;
+  }
+  section.videos .boxVideo {
+    width: 100%;
+    padding-top: 40%;
   }
 }
 

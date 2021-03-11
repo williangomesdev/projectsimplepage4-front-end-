@@ -1,0 +1,19 @@
+section.videos {
+    padding: 50px 20px;
+}
+
+section.videos .boxVideo {
+    width: 33.3%;
+    padding-top: calc(33.3% * 0.6);
+    border: 3px solid white;
+    position: relative;
+    background-color: gray;
+}
+
+section.videos .boxVideo iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}

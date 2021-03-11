@@ -1,0 +1,29 @@
+        section.treatments>h2 {
+            color: #698293;
+            font-size: 0.9rem;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        section.treatments .paddingTreatments {
+            padding: 70px 20px;
+        }
+        
+        section.treatments .tratmentsContainer {
+            width: 33.3%;
+        }
+        
+        section.treatments .tratmentsContainer .tratmentsSingle {
+            padding: 20px;
+        }
+        
+        section.treatments .tratmentsContainer .tratmentsSingle h2 {
+            color: #737373;
+            font-size: 0.8rem;
+        }
+        
+        section.treatments .tratmentsContainer .tratmentsSingle p {
+            color: #b4b4b4;
+            font-size: 0.6rem;
+            padding: 10px 0;
+        }

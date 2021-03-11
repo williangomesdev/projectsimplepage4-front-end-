@@ -3,6 +3,12 @@
             flex-direction: column;
             align-items: center;
         }
+        header nav.desktopMenu {
+            display: none;
+        }
+        header nav.mobileMenu {
+            display: unset;
+        }
         section.services>.mainBox .servicesBox:nth-of-type(1),
         section.services>.mainBox .servicesBox:nth-of-type(3) {
             width: 90%;
@@ -21,6 +27,7 @@
         section.containerProfile div.wrapperProfile .paddingImg {
             display: inline-block;
             text-align: center;
+            position: static;
         }
         section.containerProfile div.wrapperProfile .profileImg {
             width: 50%;
@@ -33,6 +40,10 @@
             display: inline-block;
             text-align: justify;
             padding: 0 30px;
+        }
+        section.videos .boxVideo {
+            width: 100%;
+            padding-top: 40%;
         }
     }
     

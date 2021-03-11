@@ -2,16 +2,24 @@ header {
     padding: 20px 2%;
 }
 
+div.mainBox {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+div.mainBoxMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 header div.logo {
     width: 236px;
     height: 40px;
     background-image: url(../imagens/logo.png);
     background-position: center;
     background-size: cover;
-}
-
-header nav.mobileMenu {
-    display: none;
 }
 
 header nav ul {
@@ -28,4 +36,29 @@ header nav ul li a {
     text-decoration: none;
     color: #b4b4b4;
     font-size: 0.5rem;
+}
+
+header nav.mobileMenu {
+    display: none;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    background-image: url(../imagens/menu-mobile.png);
+    background-size: 100% 100%;
+}
+
+header nav.mobileMenu ul {
+    position: absolute;
+    left: 0;
+    top: 75px;
+    background-color: white;
+    text-align: center;
+    display: none;
+    width: 100%;
+    z-index: 10;
+}
+
+header nav.mobileMenu ul li {
+    padding: 20px 0;
+    text-transform: uppercase;
 }
